@@ -59,7 +59,7 @@ concurrency:
 jobs:
   REAL_TIME_BENCHMARK:
     name: REAL_TIME_BENCHMARK
-    if: github.repository == 'php/php-src' || github.event_name == 'workflow_dispatch'
+    if: github.repository == 'ANightly/php-src' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-22.04
     env:
       REPOSITORY: ${{ github.repository }}
@@ -272,7 +272,7 @@ jobs:
       - name: Run benchmark
         run: ./php-version-benchmarks/benchmark.sh run aws
       - name: Store results
-        if: github.repository == 'php/php-src' && github.event_name != 'workflow_dispatch'
+        if: github.repository == 'ANightly/php-src' && github.event_name != 'workflow_dispatch'
         run: |
           set -ex
 

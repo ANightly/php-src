@@ -55,7 +55,7 @@ releases.
 
 3. Ensure that the relevant tests on CI are green.
 
-   - https://cirrus-ci.com/github/php/php-src
+   - https://cirrus-ci.com/github/ANightly/php-src
    - https://github.com/ANightly/php-src/actions
 
    > 💡 **Tip** \
@@ -643,7 +643,7 @@ slightly different steps. We'll call attention where the steps differ.
 
     ```shell
     cd /path/to/repos/php/web-php-distributions
-    mv /path/to/repos/php/php-src/php-X.Y.Z.tar.* .
+    mv /path/to/repos/ANightly/php-src/php-X.Y.Z.tar.* .
     git add php-X.Y.Z.tar.*
     git commit --gpg-sign=YOURKEYID -m "Add tarballs for php-X.Y.Z"
     git push upstream master

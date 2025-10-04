@@ -9,7 +9,7 @@ permissions:
 
 jobs:
   build:
-    if: github.repository == 'php/php-src'
+    if: github.repository == 'ANightly/php-src'
     runs-on: ubuntu-latest
     permissions:
       issues: write

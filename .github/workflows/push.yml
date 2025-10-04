@@ -33,7 +33,7 @@ env:
   CXX: ccache g++
 jobs:
   LINUX_X64:
-    if: github.repository == 'php/php-src' || github.event_name == 'pull_request'
+    if: github.repository == 'ANightly/php-src' || github.event_name == 'pull_request'
     services:
       mysql:
         image: mysql:8.3
@@ -129,7 +129,7 @@ jobs:
         if: ${{ !matrix.asan }}
         uses: ./.github/actions/verify-generated-files
   LINUX_X32:
-    if: github.repository == 'php/php-src' || github.event_name == 'pull_request'
+    if: github.repository == 'ANightly/php-src' || github.event_name == 'pull_request'
     name: LINUX_X32_DEBUG_ZTS
     runs-on: ubuntu-latest
     timeout-minutes: 50
@@ -184,7 +184,7 @@ jobs:
           runTestsParameters: >-
             -d opcache.enable_cli=1
   MACOS_DEBUG_NTS:
-    if: github.repository == 'php/php-src' || github.event_name == 'pull_request'
+    if: github.repository == 'ANightly/php-src' || github.event_name == 'pull_request'
     strategy:
       fail-fast: false
       matrix:
@@ -224,7 +224,7 @@ jobs:
       - name: Verify generated files are up to date
         uses: ./.github/actions/verify-generated-files
   WINDOWS:
-    if: github.repository == 'php/php-src' || github.event_name == 'pull_request'
+    if: github.repository == 'ANightly/php-src' || github.event_name == 'pull_request'
     name: WINDOWS_X64_ZTS
     runs-on: windows-2022
     timeout-minutes: 50
@@ -252,7 +252,7 @@ jobs:
         run: .github/scripts/windows/test.bat
   BENCHMARKING:
     name: BENCHMARKING
-    if: github.repository == 'php/php-src' || github.event_name == 'pull_request'
+    if: github.repository == 'ANightly/php-src' || github.event_name == 'pull_request'
     runs-on: ubuntu-24.04
     timeout-minutes: 50
     steps:
@@ -356,7 +356,7 @@ jobs:
           path: ${{ github.workspace }}/benchmark/profiles
           retention-days: 30
   FREEBSD:
-    if: github.repository == 'php/php-src' || github.event_name == 'pull_request'
+    if: github.repository == 'ANightly/php-src' || github.event_name == 'pull_request'
     name: FREEBSD
     runs-on: ubuntu-latest
     timeout-minutes: 50
