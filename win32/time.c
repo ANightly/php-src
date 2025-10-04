@@ -29,7 +29,21 @@ static zend_always_inline void getfilesystemtime(struct timeval *tv)
 	unsigned __int64 ff = 0;
 	ULARGE_INTEGER fft;
 
-	GetSystemTimePreciseAsFileTime(&ft);
+	typedef VOID (WINAPI *pfnGetSystemTimePreciseAsFileTime)(LPFILETIME);
+	static pfnGetSystemTimePreciseAsFileTime g_pfnGetSystemTimePreciseAsFileTime = NULL;
+	static HMODULE hKernel32 = NULL;
+	static BOOL s_init = false;
+	if (!s_init) {
+		hKernel32 = GetModuleHandle(TEXT("kernel32.dll"));
+		if (hKernel32 != NULL)
+			g_pfnGetSystemTimePreciseAsFileTime = (pfnGetSystemTimePreciseAsFileTime)GetProcAddress(hKernel32, "GetSystemTimePreciseAsFileTime");
+		s_init = true;
+	}
+	
+	if (g_pfnGetSystemTimePreciseAsFileTime != NULL)
+		g_pfnGetSystemTimePreciseAsFileTime(&ft);
+	else
+		GetSystemTimeAsFileTime(&ft);
 
 	/*
 	 * Do not cast a pointer to a FILETIME structure to either a

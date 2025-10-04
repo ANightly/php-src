@@ -415,7 +415,22 @@ static bool zend_call_stack_get_win32(zend_call_stack *stack)
 	 *                v  Lower addresses   v
 	 */
 
-	GetCurrentThreadStackLimits(&low_limit, &high_limit);
+	static void (WINAPI* GetCurrentThreadStackLimits)(PULONG_PTR , PULONG_PTR);
+	if (!GetCurrentThreadStackLimits) {
+		*(void**)&GetCurrentThreadStackLimits = GetProcAddress(GetModuleHandle(L"kernel32"), "GetCurrentThreadStackLimits");
+		if (!GetCurrentThreadStackLimits) {
+			NT_TIB* tib = (NT_TIB*)NtCurrentTeb();
+			high_limit = (ULONG_PTR)tib->StackBase;
+			MEMORY_BASIC_INFORMATION mbi;
+			if (VirtualQuery(tib->StackLimit, &mbi, sizeof(mbi))) {
+				low_limit = (ULONG_PTR)mbi.AllocationBase;
+			}
+		} else {
+			GetCurrentThreadStackLimits(&low_limit, &high_limit);
+		}
+	} else {
+		GetCurrentThreadStackLimits(&low_limit, &high_limit);
+	}		
 
 	result_size = VirtualQuery((void*)low_limit,
 			&uncommitted_region, sizeof(uncommitted_region));
