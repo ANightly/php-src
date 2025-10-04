@@ -24,8 +24,8 @@ $expected = [true, true, false, "UTF-8", "UTF-8"];
 // bind_textdomain_codeset() always returns false on musl
 // because musl only supports UTF-8. For more information:
 //
-//   * https://github.com/php/doc-en/issues/4311,
-//   * https://github.com/php/php-src/issues/17163
+//   * https://github.com/ANightly/doc-en/issues/4311,
+//   * https://github.com/ANightly/php-src/issues/17163
 //
 $expected_musl = [false, true, false, false, false];
 

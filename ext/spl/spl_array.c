@@ -186,7 +186,7 @@ static zend_object *spl_array_object_new_ex(zend_class_entry *class_type, zend_o
 				/* This is because the call to instanceof_function will remain because
 				 * the compiler can't prove in this compile unit that this function is
 				 * side-effect-free.
-				 * See https://github.com/php/php-src/pull/14518#discussion_r1638740932 */
+				 * See https://github.com/ANightly/php-src/pull/14518#discussion_r1638740932 */
 				ZEND_ASSERT(instanceof_function(class_type, spl_ce_ArrayIterator));
 				#endif
 

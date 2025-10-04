@@ -3,7 +3,7 @@ if /i "%GITHUB_ACTIONS%" neq "True" (
     exit /b 3
 )
 
-set SDK_REMOTE=https://github.com/php/php-sdk-binary-tools.git
+set SDK_REMOTE=https://github.com/ANightly/php-sdk-binary-tools.git
 set SDK_BRANCH=%PHP_BUILD_SDK_BRANCH%
 set SDK_RUNNER=%PHP_BUILD_CACHE_SDK_DIR%\phpsdk-%PHP_BUILD_CRT%-%PLATFORM%.bat
 

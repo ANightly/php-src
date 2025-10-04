@@ -31,7 +31,7 @@ Welcome to the php-src documentation!
 
    At this point in time, there are other guides that provide a more complete picture of the PHP
    project. Check the `CONTRIBUTING.md
-   <https://github.com/php/php-src/blob/master/CONTRIBUTING.md#technical-resources>`__ file for a
+   <https://github.com/ANightly/php-src/blob/master/CONTRIBUTING.md#technical-resources>`__ file for a
    list of technical resources.
 
 php-src is the canonical implementation of the interpreter for the PHP programming language, as well

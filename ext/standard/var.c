@@ -365,7 +365,7 @@ PHPAPI void php_debug_zval_dump(zval *struc, int level) /* {{{ */
 		/* Check if this is already recursing on the object before calling zend_get_properties_for,
 		 * to allow infinite recursion detection to work even if classes return temporary arrays,
 		 * and to avoid the need to update the properties table in place to reflect the state
-		 * if the result won't be used. (https://github.com/php/php-src/issues/8044) */
+		 * if the result won't be used. (https://github.com/ANightly/php-src/issues/8044) */
 		zend_object *zobj = Z_OBJ_P(struc);
 		uint32_t *guard = zend_get_recursion_guard(zobj);
 		if (ZEND_GUARD_OR_GC_IS_RECURSIVE(guard, DEBUG, zobj)) {
@@ -591,7 +591,7 @@ again:
 			/* Check if this is already recursing on the object before calling zend_get_properties_for,
 			 * to allow infinite recursion detection to work even if classes return temporary arrays,
 			 * and to avoid the need to update the properties table in place to reflect the state
-			 * if the result won't be used. (https://github.com/php/php-src/issues/8044) */
+			 * if the result won't be used. (https://github.com/ANightly/php-src/issues/8044) */
 			zend_object *zobj = Z_OBJ_P(struc);
 			uint32_t *guard = zend_get_recursion_guard(zobj);
 			if (ZEND_GUARD_OR_GC_IS_RECURSIVE(guard, EXPORT, zobj)) {

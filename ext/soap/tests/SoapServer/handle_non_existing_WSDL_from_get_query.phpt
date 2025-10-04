@@ -5,7 +5,7 @@ soap
 --SKIPIF--
 <?php
 if (PHP_OS_FAMILY === "Windows") {
-    die("skip see https://github.com/php/php-src/issues/17468");
+    die("skip see https://github.com/ANightly/php-src/issues/17468");
 }
 ?>
 --GET--

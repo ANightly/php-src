@@ -17,7 +17,7 @@ dnl Basic autoconf initialization, generation of config.nice.
 dnl ----------------------------------------------------------------------------
 
 AC_PREREQ([2.68])
-AC_INIT([PHP],[8.6.0-dev],[https://github.com/php/php-src/issues],[php],[https://www.php.net])
+AC_INIT([PHP],[8.6.0-dev],[https://github.com/ANightly/php-src/issues],[php],[https://www.php.net])
 AC_CONFIG_SRCDIR([main/php_version.h])
 AC_CONFIG_AUX_DIR([build])
 AC_PRESERVE_HELP_ORDER
@@ -209,7 +209,7 @@ case $host_cpu in
     ;;
 esac
 
-dnl See https://github.com/php/php-src/issues/14140
+dnl See https://github.com/ANightly/php-src/issues/14140
 AX_CHECK_COMPILE_FLAG([-ffp-contract=off], [CFLAGS="$CFLAGS -ffp-contract=off"])
 
 dnl Mark symbols hidden by default if the compiler (for example, gcc >= 4)
@@ -1587,7 +1587,7 @@ PHP_HELP_SEPARATOR([Libtool:])
 PHP_CONFIGURE_PART([Configuring libtool])
 
 dnl Silence warning: "ar: 'u' modifier ignored since 'D' is the default".
-dnl See https://github.com/php/php-src/pull/3017
+dnl See https://github.com/ANightly/php-src/pull/3017
 AC_SUBST([AR_FLAGS], [cr])
 
 dnl Only allow AC_PROG_CXX and AC_PROG_CXXCPP if they are explicitly called (by

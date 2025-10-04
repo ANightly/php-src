@@ -1360,7 +1360,7 @@ ZEND_API void zend_deactivate(void) /* {{{ */
 
 	zend_destroy_rsrc_list(&EG(regular_list));
 
-	/* See GH-8646: https://github.com/php/php-src/issues/8646
+	/* See GH-8646: https://github.com/ANightly/php-src/issues/8646
 	 *
 	 * Interned strings that hold class entries can get a corresponding slot in map_ptr for the CE cache.
 	 * map_ptr works like a bump allocator: there is a counter which increases to allocate the next slot in the map.

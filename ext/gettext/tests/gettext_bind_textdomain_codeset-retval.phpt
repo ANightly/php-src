@@ -19,8 +19,8 @@ gettext
     // bind_textdomain_codeset() always returns false on musl
     // because musl only supports UTF-8. For more information:
     //
-    //   * https://github.com/php/doc-en/issues/4311,
-    //   * https://github.com/php/php-src/issues/17163
+    //   * https://github.com/ANightly/doc-en/issues/4311,
+    //   * https://github.com/ANightly/php-src/issues/17163
     //
     $result = bind_textdomain_codeset('messages', "UTF-8");
     var_dump($result === false || $result === "UTF-8");

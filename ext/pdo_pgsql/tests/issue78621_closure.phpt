@@ -17,7 +17,7 @@ function attach($db, $prefix = '')
     {
         case 0:
             $db->setNoticeCallback(function($message) use($prefix) { echo $prefix.trim($message)."\n"; });
-            // https://github.com/php/php-src/pull/4823#pullrequestreview-335623806
+            // https://github.com/ANightly/php-src/pull/4823#pullrequestreview-335623806
             $eraseCallbackMemoryHere = (object)[1];
             break;
         case 1:

@@ -6,7 +6,7 @@ Stress test $x .= $x
 /*
  * Test case for a concat_function() change that broke a test outside of Zend
  *
- * @see https://github.com/php/php-src/commit/29397f8fd2b4bc8d95e18448ca2d27a62241a407
+ * @see https://github.com/ANightly/php-src/commit/29397f8fd2b4bc8d95e18448ca2d27a62241a407
 **/
 
 $result = 'f';

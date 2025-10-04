@@ -3871,7 +3871,7 @@ void zend_jit_shutdown(void)
 
 	/* Reset global pointers to prevent use-after-free in `zend_jit_status()`
 	 * after gracefully restarting Apache with mod_php, see:
-	 * https://github.com/php/php-src/pull/19212 */
+	 * https://github.com/ANightly/php-src/pull/19212 */
 	dasm_ptr = NULL;
 	dasm_buf = NULL;
 	dasm_end = NULL;

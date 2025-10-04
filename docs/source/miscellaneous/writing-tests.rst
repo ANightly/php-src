@@ -33,7 +33,7 @@ What do you write phpt tests on?
    function).
 
    You can find out what functions already have phpt tests by looking in the `html version
-   <https://github.com/php/php-src>`_ of the git repository (``ext/standard/tests/`` is a good place
+   <https://github.com/ANightly/php-src>`_ of the git repository (``ext/standard/tests/`` is a good place
    to start looking — though not all the tests currently written are in there).
 
    If you want more guidance than that you can always ask the PHP Quality Assurance Team on their

@@ -2090,7 +2090,7 @@ static void emit_type_narrowing_warning(const zend_op_array *op_array, const zen
 	uint32_t lineno = def_opline ? def_opline->lineno : 0;
 	zend_error_at(
 		E_WARNING, op_array->filename, lineno,
-		"Narrowing occurred during type inference of %s. Please file a bug report on https://github.com/php/php-src/issues", def_op_name);
+		"Narrowing occurred during type inference of %s. Please file a bug report on https://github.com/ANightly/php-src/issues", def_op_name);
 #if ZEND_DEBUG
 	ZEND_ASSERT(0 && "Narrowing during type inference");
 #endif
@@ -4053,7 +4053,7 @@ static zend_always_inline zend_result _zend_update_type_info(
 					case ZEND_FETCH_UNSET:
 					case ZEND_YIELD_FROM:
 					/* Currently unimplemented due to some assumptions in JIT. See:
-					 * https://github.com/php/php-src/pull/13304#issuecomment-1926668141 */
+					 * https://github.com/ANightly/php-src/pull/13304#issuecomment-1926668141 */
 					case ZEND_SEPARATE:
 						break;
 					default:

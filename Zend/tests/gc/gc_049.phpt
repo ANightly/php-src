@@ -22,7 +22,7 @@ class CycleWithDestructor
     }
 }
 
-$isSecondGcRerun = false; // https://github.com/php/php-src/commit/b58d74547f
+$isSecondGcRerun = false; // https://github.com/ANightly/php-src/commit/b58d74547f
 $createFx = static function () use (&$createFx, &$isSecondGcRerun): void {
     $destructorFx = static function () use (&$createFx, &$isSecondGcRerun): void {
         if (!gc_status()['running']) {

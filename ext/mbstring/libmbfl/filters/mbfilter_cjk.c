@@ -813,7 +813,7 @@ static bool mb_check_jis(unsigned char *in, size_t in_len)
 			} else if (c2 == '(') {
 				unsigned char c3 = *p++;
 				/* ESC ( H is treated as a sequence transitioning to ASCII for historical reasons.
-				 * see https://github.com/php/php-src/pull/10828#issuecomment-1478342432. */
+				 * see https://github.com/ANightly/php-src/pull/10828#issuecomment-1478342432. */
 				if (c3 == 'B' || c3 == 'H') {
 					state = ASCII;
 				} else if (c3 == 'J') {

@@ -72,7 +72,7 @@ ZEND_API void zend_max_execution_timer_init(void) /* {{{ */
 					sizeof(EG(max_execution_timer_timer)));
 #endif
 
-	// Measure wall time instead of CPU time as originally planned now that it is possible https://github.com/php/php-src/pull/6504#issuecomment-1370303727
+	// Measure wall time instead of CPU time as originally planned now that it is possible https://github.com/ANightly/php-src/pull/6504#issuecomment-1370303727
 	if (timer_create(ZEND_MAX_EXECUTION_TIMERS_CLOCK, &sev, &EG(max_execution_timer_timer)) != 0) {
 		zend_strerror_noreturn(E_ERROR, errno, "Could not create timer");
 	}

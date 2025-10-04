@@ -50,7 +50,7 @@ $foo = $test[(string)'0'];
 $foo = $test[(string)'123'];
 
 /**
- * @see https://github.com/php/php-src/pull/2607#issuecomment-313781748
+ * @see https://github.com/ANightly/php-src/pull/2607#issuecomment-313781748
  */
 function test(): string {
     $array["10"] = 42;

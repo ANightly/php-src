@@ -5,7 +5,7 @@
  * This script checks the constants defined in the curl PHP extension, against those documented on the cURL website:
  * https://curl.se/libcurl/c/symbols-in-versions.html
  *
- * See the discussion at: https://github.com/php/php-src/pull/2961
+ * See the discussion at: https://github.com/ANightly/php-src/pull/2961
  */
 
 const CURL_DOC_FILE = 'https://curl.se/libcurl/c/symbols-in-versions.html';

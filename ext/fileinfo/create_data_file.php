@@ -32,7 +32,7 @@
 
     /*--- File generation ---*/
 
-    // https://github.com/php/php-src/pull/10422
+    // https://github.com/ANightly/php-src/pull/10422
     // Some compilers (GCC, clang) do not like long lists; some (MSVC) do not like long strings.
     // CHUNK_SIZE splitting our ~10 MB binary source should give a good compromise between both.
     const CHUNK_SIZE = 1024;

@@ -56,7 +56,7 @@ releases.
 3. Ensure that the relevant tests on CI are green.
 
    - https://cirrus-ci.com/github/php/php-src
-   - https://github.com/php/php-src/actions
+   - https://github.com/ANightly/php-src/actions
 
    > 💡 **Tip** \
    > We recommend checking the build status a couple of days before packaging day
@@ -85,7 +85,7 @@ releases.
 7. Communicate with release managers via release-managers@php.net.
 
 8. References to repositories in this document refer to the canonical source
-   located at https://github.com/php.
+   located at https://github.com/ANightly.
 
 9. It might be helpful to name your remote repositories something other than
    "origin" to avoid accidentally pushing changes to "origin" with [muscle
@@ -431,22 +431,22 @@ slightly different steps. We'll call attention where the steps differ.
    > remember that
    > * `qa.php.net` has been replaced with https://www.php.net/release-candidates.php
    > * `bugs.php.net` has been replaced with GitHub issues, use
-   >    `https://github.com/php/php-src/issues/new?template=bug_report.yml`
+   >    `https://github.com/ANightly/php-src/issues/new?template=bug_report.yml`
    >   to link directly to the form for creating a new bug report.
    > * Since 8.4 there have only been 4 release candidates for PHP X.Y.0, rather than 6.
 
-   * [Announce 8.1.0alpha1](https://github.com/php/web-php/commit/57b9675c8d8550493289fa1fba77427c93cdd472)
-   * [Announce 8.1.0alpha2](https://github.com/php/web-php/commit/cec044fc0763f5cfa77d0e79479f8b6279023570)
-   * [Announce 8.1.0alpha3](https://github.com/php/web-php/commit/5c480765f444a3fddfd575e01fe0be3fcfdde05b)
-   * [Announce 8.1.0beta1](https://github.com/php/web-php/commit/40840e3c3f89d6dd95baa4b8cdf22d6f206f86c2)
-   * [Announce 8.1.0beta2](https://github.com/php/web-php/commit/7bf6acdadd4940bd9db711bf3f9d5a4054dc0722)
-   * [Announce 8.1.0beta3](https://github.com/php/web-php/commit/38c8a872700fb0c2ebde49e2eae3374257ba6d08)
-   * [Announce 8.1.0RC1](https://github.com/php/web-php/commit/6e4bf3d0228ce113728d5f1a769ed42e0d63ca10)
-   * [Announce 8.1.0RC2](https://github.com/php/web-php/commit/1ae95f4b686a5d614a94a664a7466ee0e5cd21eb)
-   * [Announce 8.1.0RC3](https://github.com/php/web-php/commit/3091246d77a3f445fcc593587597d0abcab8c373)
-   * [Announce 8.1.0RC4](https://github.com/php/web-php/commit/fbaeb9403f4e2856115889946d3f63751e183c7b)
-   * [Announce 8.1.0RC5](https://github.com/php/web-php/commit/46473ccccfb5f7fedc3f169c55fb7c22a596b55d)
-   * [Announce 8.1.0RC6](https://github.com/php/web-php/commit/cacaef9c41352b5dbf3fbbf44702cc6c0cbfb478)
+   * [Announce 8.1.0alpha1](https://github.com/ANightly/web-php/commit/57b9675c8d8550493289fa1fba77427c93cdd472)
+   * [Announce 8.1.0alpha2](https://github.com/ANightly/web-php/commit/cec044fc0763f5cfa77d0e79479f8b6279023570)
+   * [Announce 8.1.0alpha3](https://github.com/ANightly/web-php/commit/5c480765f444a3fddfd575e01fe0be3fcfdde05b)
+   * [Announce 8.1.0beta1](https://github.com/ANightly/web-php/commit/40840e3c3f89d6dd95baa4b8cdf22d6f206f86c2)
+   * [Announce 8.1.0beta2](https://github.com/ANightly/web-php/commit/7bf6acdadd4940bd9db711bf3f9d5a4054dc0722)
+   * [Announce 8.1.0beta3](https://github.com/ANightly/web-php/commit/38c8a872700fb0c2ebde49e2eae3374257ba6d08)
+   * [Announce 8.1.0RC1](https://github.com/ANightly/web-php/commit/6e4bf3d0228ce113728d5f1a769ed42e0d63ca10)
+   * [Announce 8.1.0RC2](https://github.com/ANightly/web-php/commit/1ae95f4b686a5d614a94a664a7466ee0e5cd21eb)
+   * [Announce 8.1.0RC3](https://github.com/ANightly/web-php/commit/3091246d77a3f445fcc593587597d0abcab8c373)
+   * [Announce 8.1.0RC4](https://github.com/ANightly/web-php/commit/fbaeb9403f4e2856115889946d3f63751e183c7b)
+   * [Announce 8.1.0RC5](https://github.com/ANightly/web-php/commit/46473ccccfb5f7fedc3f169c55fb7c22a596b55d)
+   * [Announce 8.1.0RC6](https://github.com/ANightly/web-php/commit/cacaef9c41352b5dbf3fbbf44702cc6c0cbfb478)
 
    > ⚠️ **Important** \
    > In your announcement news entry, be sure to include the following text or
@@ -479,7 +479,7 @@ slightly different steps. We'll call attention where the steps differ.
    > remember that
    > * `qa.php.net` has been replaced with https://www.php.net/release-candidates.php
    > * `bugs.php.net` has been replaced with GitHub issues, use
-   >    `https://github.com/php/php-src/issues/new?template=bug_report.yml`
+   >    `https://github.com/ANightly/php-src/issues/new?template=bug_report.yml`
    >   to link directly to the form for creating a new bug report.
    > * Since 8.4 there have only been 4 release candidates for PHP X.Y.0, rather than 6.
 
@@ -747,7 +747,7 @@ slightly different steps. We'll call attention where the steps differ.
    You may edit the generated files to expand on the base message, if needed.
 
    The edits are necessary for PHP-X.Y.0 version where the format is different.
-   See for example [PHP-8.2 announcement](https://github.com/php/web-php/commit/c966868202caafa880213055f4e3e97c0483119b)
+   See for example [PHP-8.2 announcement](https://github.com/ANightly/web-php/commit/c966868202caafa880213055f4e3e97c0483119b)
 
 7. Update the ChangeLog file for the given major version (e.g., `ChangeLog-8.php`).
 
@@ -757,7 +757,7 @@ slightly different steps. We'll call attention where the steps differ.
    for PHP 8.4) added above the first anchor of the previous version.
 
    ```shell
-   ./bin/news2html 'https://github.com/php/php-src/raw/php-X.Y.Z/NEWS' 'X.Y.Z' 'ChangeLog-X.php'
+   ./bin/news2html 'https://github.com/ANightly/php-src/raw/php-X.Y.Z/NEWS' 'X.Y.Z' 'ChangeLog-X.php'
    ```
 8. Update the information in the `$QA_RELEASES` array in `include/release-qa.php`.
 
@@ -996,7 +996,7 @@ feature development that cannot go into the new version.
    provides security researchers with confidence they are using our most
    up-to-date reporting policies.
 
-   The `security.txt` file is located in the [web-php repository](https://github.com/php/web-php)
+   The `security.txt` file is located in the [web-php repository](https://github.com/ANightly/web-php)
    under the `.well-known/` directory. We may make changes to this file at other
    times, as needed, but we will always advance the `Expires` timestamp on a
    yearly cadence, coinciding with our X.Y.0 releases.
@@ -1138,34 +1138,34 @@ volunteers to begin the selection process for the next release managers.
 
 6. Make sure you have the following repositories cloned locally:
 
-   * https://github.com/php/php-src
-   * https://github.com/php/web-php
-   * https://github.com/php/web-php-distributions
+   * https://github.com/ANightly/php-src
+   * https://github.com/ANightly/web-php
+   * https://github.com/ANightly/web-php-distributions
 
 
 [general availability]: https://en.wikipedia.org/wiki/Software_release_life_cycle#General_availability_(GA)
 [muscle memory]: https://en.wikipedia.org/wiki/Muscle_memory
 [Conditional Includes For Git Config]: https://motowilliams.com/2017-05-11-conditional-includes-for-git-config/
-[Update versions for PHP 8.1.0beta3]: https://github.com/php/php-src/commit/3edd1087c70bee2ec21f0fbec1a575d78a500f15
-[Update versions for PHP 8.1.6RC1]: https://github.com/php/php-src/commit/40e8ced23898e3069340ca03ea5febc5361015ad
-[Update NEWS for PHP 8.1.6RC1]: https://github.com/php/php-src/commit/a4fdeaebe419b88e3b4a1f5aba845c2d4e81fd4e
-[Prepare for PHP 8.1.0RC1]: https://github.com/php/php-src/commit/5764414eb8900ae98020a3c20693f4fb793efa99
-[Update NEWS for PHP 8.2.0 alpha2]: https://github.com/php/php-src/commit/418f7211f71658d79d934861be20f277db96fe2c
-[Update NEWS for PHP 8.2.0RC6]: https://github.com/php/php-src/commit/4ccc414961a70200d638ca281a35f893226d74e2
-[PHP 8.3 is now for PHP 8.3.21-dev]: https://github.com/php/php-src/commit/b57f425cfe20a11003253427424cc0517483550b
+[Update versions for PHP 8.1.0beta3]: https://github.com/ANightly/php-src/commit/3edd1087c70bee2ec21f0fbec1a575d78a500f15
+[Update versions for PHP 8.1.6RC1]: https://github.com/ANightly/php-src/commit/40e8ced23898e3069340ca03ea5febc5361015ad
+[Update NEWS for PHP 8.1.6RC1]: https://github.com/ANightly/php-src/commit/a4fdeaebe419b88e3b4a1f5aba845c2d4e81fd4e
+[Prepare for PHP 8.1.0RC1]: https://github.com/ANightly/php-src/commit/5764414eb8900ae98020a3c20693f4fb793efa99
+[Update NEWS for PHP 8.2.0 alpha2]: https://github.com/ANightly/php-src/commit/418f7211f71658d79d934861be20f277db96fe2c
+[Update NEWS for PHP 8.2.0RC6]: https://github.com/ANightly/php-src/commit/4ccc414961a70200d638ca281a35f893226d74e2
+[PHP 8.3 is now for PHP 8.3.21-dev]: https://github.com/ANightly/php-src/commit/b57f425cfe20a11003253427424cc0517483550b
 [GitHub command line tool]: https://cli.github.com
 [merged upwards as usual]: https://wiki.php.net/vcs/gitworkflow
-[Update versions for PHP 8.1.7]: https://github.com/php/php-src/commit/d35e577a1bd0b35b9386cea97cddc73fd98eed6d
-[Update NEWS for PHP 8.1.7]: https://github.com/php/php-src/commit/b241f07f52ca9f87bf52be81817f475e6e727439
-[Announce PHP 8.1.6]: https://github.com/php/web-php/commit/9f796a96c65f07e45845ec248933bfb0010b94a9
+[Update versions for PHP 8.1.7]: https://github.com/ANightly/php-src/commit/d35e577a1bd0b35b9386cea97cddc73fd98eed6d
+[Update NEWS for PHP 8.1.7]: https://github.com/ANightly/php-src/commit/b241f07f52ca9f87bf52be81817f475e6e727439
+[Announce PHP 8.1.6]: https://github.com/ANightly/web-php/commit/9f796a96c65f07e45845ec248933bfb0010b94a9
 [feature freeze]: https://en.wikipedia.org/wiki/Freeze_(software_engineering)
-[Prepare for PHP 8.2]: https://github.com/php/php-src/commit/1c33ddb5e5598c5385c4c965992c6e031fd00dd6
-[Prepare for PHP 8.2 (bis)]: https://github.com/php/php-src/commit/a93e12f8a6dfc23e334339317c97aa35356db821
-[Add PHP-8.1 to the Git steps page]: https://github.com/php/web-php/commit/1fcd78c2817cf1fbf1a1de2ddec1350be4e26491
+[Prepare for PHP 8.2]: https://github.com/ANightly/php-src/commit/1c33ddb5e5598c5385c4c965992c6e031fd00dd6
+[Prepare for PHP 8.2 (bis)]: https://github.com/ANightly/php-src/commit/a93e12f8a6dfc23e334339317c97aa35356db821
+[Add PHP-8.1 to the Git steps page]: https://github.com/ANightly/web-php/commit/1fcd78c2817cf1fbf1a1de2ddec1350be4e26491
 [Changes to the wiki]: https://wiki.php.net/vcs/gitworkflow?do=diff&rev2%5B0%5D=1617123194&rev2%5B1%5D=1654728193&difftype=sidebyside
 [migration guide]: https://www.php.net/manual/en/migration81.php
 [GPG key]: https://en.wikipedia.org/wiki/GNU_Privacy_Guard
 [Generating a new GPG key]: https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key
 [sign your GPG key]: https://carouth.com/articles/signing-pgp-keys/
 [Send emails from a different address or alias]: https://support.google.com/mail/answer/22370?hl=en
-[security-txt]: https://github.com/php/policies/blob/main/security-policies.rst#making-changes-to-securitytxt
+[security-txt]: https://github.com/ANightly/policies/blob/main/security-policies.rst#making-changes-to-securitytxt

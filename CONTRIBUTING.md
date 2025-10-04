@@ -44,7 +44,7 @@ supported branch of PHP that the bug affects (only green branches on
 [the supported version page](https://www.php.net/supported-versions.php) are
 supported). For example, at the time of writing, the lowest supported version is
 PHP 8.0, which corresponds to the `PHP-8.0` branch in Git. Please also make sure
-you add a link to the PR in the bug on [the bug tracker](https://github.com/php/php-src/issues)
+you add a link to the PR in the bug on [the bug tracker](https://github.com/ANightly/php-src/issues)
 or [the old bug tracker](https://bugs.php.net/).
 
 Pull requests implementing RFCs should be submitted against `master`.
@@ -58,7 +58,7 @@ them by using `git rebase` instead of `git merge`.
 Fork the official PHP repository and send a pull request. A notification will be
 sent to the pull request mailing list. Sending a note to PHP Internals list
 (internals@lists.php.net) may help getting more feedback and quicker turnaround.
-You can also add pull requests to [bug reports](https://github.com/php/php-src/issues)
+You can also add pull requests to [bug reports](https://github.com/ANightly/php-src/issues)
 and [old bug reports](https://bugs.php.net/).
 
 Read [Git access page](https://www.php.net/git.php) for help on using Git to get
@@ -68,7 +68,7 @@ and build PHP source code. We recommend to look at our
 
 ## Filing bugs
 
-Bugs can be filed on [GitHub Issues](https://github.com/php/php-src/issues/new/choose).
+Bugs can be filed on [GitHub Issues](https://github.com/ANightly/php-src/issues/new/choose).
 If this is the first time you've filed a bug, we suggest reading the
 [guide to reporting a bug](https://bugs.php.net/how-to-report.php).
 

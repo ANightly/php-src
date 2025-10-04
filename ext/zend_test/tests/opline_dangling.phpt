@@ -1,7 +1,7 @@
 --TEST--
 possible segfault in `ZEND_BIND_STATIC`
 --DESCRIPTION--
-https://github.com/php/php-src/pull/12758
+https://github.com/ANightly/php-src/pull/12758
 --EXTENSIONS--
 zend_test
 --ENV--

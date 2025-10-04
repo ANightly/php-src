@@ -5,7 +5,7 @@ curl
 --SKIPIF--
 <?php
 if (curl_version()['version_number'] === 0x080a00) {
-    // https://github.com/php/php-src/issues/15997
+    // https://github.com/ANightly/php-src/issues/15997
     die('xfail due to a libcurl bug');
 }
 ?>

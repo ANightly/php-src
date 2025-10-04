@@ -7,7 +7,7 @@ simplexml
 
 $xmlData = <<<EOF
 <?xml version="1.0" encoding="utf-8"?>
-<document>https://github.com/php/php-src/issues/10200 not encountered</document>
+<document>https://github.com/ANightly/php-src/issues/10200 not encountered</document>
 EOF;
 
 $xml = simplexml_load_string($xmlData);
@@ -18,5 +18,5 @@ var_dump($output);
 --EXPECT--
 array(1) {
   [0]=>
-  string(59) "https://github.com/php/php-src/issues/10200 not encountered"
+  string(59) "https://github.com/ANightly/php-src/issues/10200 not encountered"
 }

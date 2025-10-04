@@ -28,7 +28,7 @@ theme_options = ThemeOptions(
     show_prev_next=True,
     extra_header_link_icons={
         'repository on GitHub': {
-            'link': 'https://github.com/php/php-src',
+            'link': 'https://github.com/ANightly/php-src',
             'icon': (
                 '<svg height="26px" style="margin-top:-2px;display:inline" '
                 'viewBox="0 0 45 44" '

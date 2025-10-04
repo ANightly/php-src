@@ -917,7 +917,7 @@ function save_results(string $output_file, bool $prompt_to_save_results): void
             echo "\nYou may have found a problem in PHP.";
         }
         echo "\nThis report can be saved and used to open an issue on the bug tracker at\n";
-        echo "https://github.com/php/php-src/issues\n";
+        echo "https://github.com/ANightly/php-src/issues\n";
         echo "This gives us a better understanding of PHP's behavior.\n";
         echo "Do you want to save this report in a file? [Yn]: ";
         flush();

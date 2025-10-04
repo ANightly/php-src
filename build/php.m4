@@ -1802,7 +1802,7 @@ AC_DEFUN([PHP_SETUP_ICONV], [
   AS_VAR_IF([found_iconv], [no], [
 
   dnl Find /opt/homebrew/opt/libiconv on macOS
-  dnl See: https://github.com/php/php-src/pull/19475
+  dnl See: https://github.com/ANightly/php-src/pull/19475
     php_brew_prefix=no
     AC_CHECK_PROG([BREW], [brew], [brew])
     if test -n "$BREW"; then

@@ -1,7 +1,7 @@
 # Reporting Security Issues
 
 Please report security vulnerabilities on GitHub at:
-<https://github.com/php/php-src/security/advisories/new>
+<https://github.com/ANightly/php-src/security/advisories/new>
 
 If for some reason you cannot use the form at GitHub, or you need to talk to
 somebody about a PHP security issue that might not be a bug report, please write
@@ -14,4 +14,4 @@ Credit System.
 # Vulnerability Policy
 
 Our full policy is described at
-https://github.com/php/policies/blob/main/security-classification.rst
+https://github.com/ANightly/policies/blob/main/security-classification.rst

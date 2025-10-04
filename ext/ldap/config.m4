@@ -10,7 +10,7 @@ AC_DEFUN([PHP_LDAP_CHECKS], [
   else
     dnl Note that Oracle Instant Client lacks LDAP features implemented in PHP
     dnl ldap extension and cannot be built. Use OpenLDAP on Solaris.
-    dnl See: https://github.com/php/php-src/issues/15051
+    dnl See: https://github.com/ANightly/php-src/issues/15051
 
     dnl Find Oracle Instant Client RPM header location corresponding to the
     dnl given lib path e.g. for --with-ldap=/usr/lib/oracle/12.1/client64/lib
